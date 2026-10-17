@@ -1,0 +1,5 @@
+2001	Test systemu lokalizacji questów
+2002	Pozosta³y czas
+2003	Etap {}
+2101	Witaj {}, masz poziom {}.
+2102	Przedmiot: {}, potwór: {}.

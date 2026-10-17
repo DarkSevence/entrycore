@@ -1,0 +1,5 @@
+2001	Quest localization test
+2002	Time remaining
+2003	Stage {}
+2101	Hello {}, you are level {}.
+2102	Item: {}, monster: {}.

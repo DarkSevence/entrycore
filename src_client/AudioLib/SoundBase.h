@@ -1,0 +1,27 @@
+#ifndef __AudioLib_CSOUNDBASE_H__
+#define __AudioLib_CSOUNDBASE_H__
+
+#include <map>
+#include <vector>
+#include "SoundData.h"
+
+typedef std::map<DWORD, CSoundData*> TSoundDataMap;
+
+class CSoundBase
+{
+	public:
+		CSoundBase();
+		virtual ~CSoundBase();
+
+		void					Initialize();
+		void					Destroy();
+
+		CSoundData *			AddFile(DWORD dwFileCRC, const char* filename);
+		DWORD					GetFileCRC(const char* filename);
+
+	protected:
+		static int								ms_iRefCount;
+		static TSoundDataMap					ms_dataMap;
+};
+
+#endif

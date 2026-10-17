@@ -1,0 +1,2 @@
+#define LOCALE_SERVICE_SINGAPORE			// ½Ì°¡Æú
+#define ENABLE_COSTUME_SYSTEM

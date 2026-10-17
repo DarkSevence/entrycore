@@ -1,0 +1,6 @@
+#ifndef __ENTRYCORE_LOCALE_INC_H__
+#define __ENTRYCORE_LOCALE_INC_H__
+
+#define MULTILANG_SYSTEM
+
+#endif

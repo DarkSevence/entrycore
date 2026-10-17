@@ -1,0 +1,528 @@
+1	%d seconds until Exit.
+2	Your logout has been cancelled.
+3	Back to login window. Please wait.
+4	You have been disconnected from the server. Please wait.
+5	You are changing character. Please wait.
+6	You cannot do this whilst sitting on a Horse.
+7	Please call your Horse first.
+8	You have sent your horse away.
+9	You have to get off your Horse.
+10	You cannot feed your Horse whilst sitting on it.
+11	You have fed the Horse with %s%s.
+12	You need %s.
+13	The game will be closed in %d seconds.
+14	You cannot restart yet. Please wait another %d seconds.
+15	You cannot restart in the city yet. Wait another %d seconds.
+16	You cannot change your status while you are transformed.
+17	You cannot use this in the duel arena.
+18	This player is currently fighting.
+19	[Guild] It does not belong to the guild.
+20	[Guild] You do not have the authority to change the level of the guild skills.
+21	[Storeroom] You have entered an incorrect password.
+22	[Storeroom] The Storeroom is already open.
+23	[Storeroom] You have to wait 10 seconds before you can open the Storeroom again.
+24	[Group] The server cannot execute this group request.
+25	[Group] You cannot leave a group while you are in a dungeon.
+26	[Group] You have left the group.
+27	[Guild] Your guild is already participating in another war.
+28	[Guild] No one is entitled to a guild war.
+29	[Guild] No guild with this name exists.
+30	[Guild] This guild is already participating in a war.
+31	[Guild] Not enough Yang to participate in a guild war.
+32	[Guild] The guild does not have enough Yang to participate in a guild war.
+33	[Guild] This Guild is already scheduled for another war.
+34	[Guild] This guild is already participating in another war.
+35	[Guild] A minimum of %d players are needed to participate in a guild war.
+36	[Guild] The guild does not have enough points to participate in a guild war.
+37	[Guild] The guild does not have enough members to participate in a guild war.
+38	[Guild] The enemy's guild leader is offline.
+39	%s declined the invitation.
+40	You have too many items in your inventory.
+41	You cannot accept the invitation because you are already in the group.
+42	Hit Points +%d
+43	Spell Points +%d
+44	Endurance +%d
+45	Intelligence +%d
+46	Strength +%d
+47	Dexterity +%d
+48	Attack Speed +%d
+49	Movement Speed %d
+50	Cooldown Time -%d
+51	Energy Recovery +%d
+52	Spell Point Recovery +%d
+53	Poison Attack %d
+54	Speed Reduction +%d
+55	Critical Attack with a chance of %d%%
+56	Chance of a Speared Attack of %d%%
+57	Player's Attack Power against Monsters +%d%%
+58	Attack Boost against Wonggui + %d%%
+59	Attack Boost against Milgyo + %d%%
+60	Attack boost against zombies + %d%%
+61	Attack boost against devils + %d%%
+62	Absorbing of Energy %d%% while attacking.
+63	Absorption of Spell Points (SP) %d%% while attacking.
+64	With a chance of %d%% Spell Points (SP) will be taken from the enemy.
+65	Absorbing of Spell Points (SP) with a chance of %d%%
+66	%d%% Chance of blocking a close-combat attack
+67	%d%% Chance of blocking a long range attack
+68	One-Handed Sword defence %d%%
+69	Two-Handed Sword Defence %d%%
+70	Two-Handed Sword Defence %d%%
+71	Bell Defence %d%%
+72	Fan Defence %d%%
+73	Distant Attack Resistance %d%%
+74	Fire Resistance %d%%
+75	Lightning Resistance %d%%
+76	Magic Resistance %d%%
+77	Wind Resistance %d%%
+78	Reflect Direct Hit: %d%%
+79	Reflect Curse: %d%%
+80	Poison Resistance %d%%
+81	Attack Power + %d
+82	Armour + %d
+83	Magical Attack + %d
+84	Magical Defence + %d
+85	Maximum Endurance + %d
+86	Strong against Warriors + %d%%
+87	Strong against Ninjas + %d%%
+88	Strong against Sura + %d%%
+89	Strong against Shamans + %d%%
+90	Strength against monsters + %d%%
+91	Attack + %d%%
+92	Defence + %d%%
+93	Experience %d%%
+94	Maximum Energy +%d%%
+95	Maximum Energy +%d%%
+96	Skill Damage %d%%
+97	Hit Damage %d%%
+98	Resistance against Skill Damage %d%%
+99	Resistance against Hits %d%%
+100	%d%% Resistance against Warrior Attacks
+101	%d%% Resistance against Ninja Attacks
+102	%d%% Resistance against Sura Attacks
+103	%d%% Resistance against Shaman Attacks
+104	The free weapon improvements can only be used on weapons up to level 20.
+105	This item cannot be advanced this way.
+106	This item cannot be improved.
+107	Your level is too low to use this item.
+108	Not enough Yang for an upgrade.
+109	Not the right material for an upgrade.
+110	You cannot upgrade items with this Scroll.
+111	You cannot combine identical Advancement Scrolls.
+112	You can only be rewarded once for the Demon Tower Quest.
+113	You can combine the Blessing Scroll with the Magic Iron Ore.
+114	There aren't any Pieces of Broken Stone available for removal.
+115	You cannot store this location.
+116	You cannot teleport to a safe position in a foreign Kingdom.
+117	You can only open the shop if you take off your armour.
+118	Unfortunately you don't have enough space in your inventory.
+119	You cannot use this item because you do not fulfil all the requirements.
+120	You don't have enough HP.
+121	You don't have enough Spell Points (SP) to use this.
+122	You cannot use this from your current position.
+123	You are ready to warp, so you cannot use the Scroll of the Location.
+124	You cannot use a Scroll of the Location whilst taking part in a kingdom battle.
+125	After opening a storeroom you cannot use a Scroll of the Location for another %d seconds.
+126	You cannot use a Return Scroll while another window is open.
+127	You cannot use the Scroll of the Location because the distance is too small.
+128	After a trade you cannot use a Scroll of the Location for %d seconds.
+129	You are being brought back to the place of origin.
+130	%s%s cannot be used in a dungeon.
+131	You cannot drop this item.
+132	The dropped item will disappear after %d minutes.
+133	You cannot throw the Gold away yet.
+134	You cannot equip this item in your belt inventory.
+135	%s received
+136	Item Trade: %s, %s
+137	%s receives %s.
+138	You cannot ride while you are wearing a Wedding Dress or a Tuxedo.
+139	You cannot change the equipped item while you are transformed.
+140	You are not able to use that item because you do not have the right gender.
+141	You cannot feed a dead Horse.
+142	You fed the Horse with Herbs.
+143	You have fed the Horse.
+144	Your level is too low to wear this Hairstyle.
+145	You already have this Hairstyle.
+146	You have already transformed.
+147	You cannot transform while you are riding.
+148	You cannot transform into a monster who has a higher level than you.
+149	Your level is too low to equip this item.
+150	You are not strong enough to equip yourself with this item.
+151	Your intelligence is too low to equip yourself with this item.
+152	Your dexterity is too low to equip yourself with this item.
+153	Your vitality is too low to equip yourself with this item.
+154	You cannot equip this item twice.
+155	You cannot wear a Wedding Ring if you are not married.
+156	You cannot use this item because you are not married.
+157	You cannot change the upgrade of this item.
+158	Upgrade successfully added.
+159	This item can no longer be improved. The maximum number of bonuses has been reached.
+160	There is no upgrade that you can change.
+161	You have changed the upgrade.
+162	No upgrade added.
+163	You must use the Blessing Marble in order to add another bonus to this item.
+164	Socket successfully added.
+165	No socket added.
+166	No additional sockets could be added to this item.
+167	You cannot add a socket to this item.
+168	Arming successful.
+169	Arming has failed.
+170	You have to add a socket first. Use a diamond in order to do this.
+171	There are no sockets for gemstones in this item.
+172	No more gems can be added to this item.
+173	You cannot change the Bait whilst fishing.
+174	You are exchanging the current Bait for %s.
+175	You attached %s to the hook as bait.
+176	You are missing some ingredients to make the potion.
+177	You do not have enough material (%s).
+178	You do not have enough empty bottles.
+179	The potion production has failed.
+180	You cannot attach this Spirit Stone to a weapon.
+181	You have attached the Spirit Stone successfully.
+182	The Spirit Stone broke while being attached.
+183	No slot free.
+184	This effect is already activated.
+185	%d seconds have been added.
+186	Used Moon Cake or Seed.
+187	You cannot read a book while you are transformed.
+188	You need to have a minimum level of 30 to understand this book.
+189	You need a minimum level of 50 to understand this book.
+190	You cannot train with this Book any more.
+191	This book will not help you.
+192	You already understand this language.
+193	You have to improve your Level to read this Book.
+194	You cannot read any more Riding Guides.
+195	You read the Horse Riding Manual and received a Riding Point.
+196	You can use this point to improve your riding skill!
+197	You did not understand the riding guide.
+198	Your rank has increased by %d points.
+199	The rank points cannot be increased further.
+200	You cannot dye or bleach your current hairstyle.
+201	You need to have reached level %d to be able to dye your hair again.
+202	You cannot use the Event Detector from this position.
+203	The Event Detector vanished in a mysterious light.
+204	The Event Detector has vanished.
+205	A mysterious light comes out of the box.
+206	You have not received anything.
+207	You find a simple Piece of Stone in the Clam.
+208	The Clam has vanished.
+209	There is a White Pearl inside the Clam.
+210	There is a Blue Pearl inside the Clam.
+211	There is a Blood-Red Pearl inside the Clam.
+212	You have received %d experience points.
+213	You have received %d Yang.
+214	The box contains %s.
+215	The level of your item is too high.
+216	Can only be used on weapons and armour.
+217	There is no Stone available to take out.
+218	If you inhale the green smoke that is coming out of the box, the poison will spread through your body!
+219	This item can only be used in an Internet cafe.
+220	Used Moon Cake or Seed.
+221	Before you open the Cor Draconis, you have to complete the Dragon Stone quest and activate the Dragon Stone Alchemy.
+222	The book is too hard for practising.
+223	You cannot use it at the moment.
+224	There is no stone available for removal.
+225	You cannot move the item within the refinement window.
+226	You have to stand still to equip the item.
+227	You have escaped the evil ghost curse with the help of an Exorcism Scroll.
+228	Your mind is clear. You can concentrate really well now.
+229	This key does not seem to fit the lock.
+230	You need a minimum level of 50 to get riding training.
+231	Cannot be used yet.
+232	You cannot build a campfire here.
+233	You cannot build a campfire under water.
+234	You have lowered your Skill Level.
+235	You cannot lower your Skill Level.
+236	The duel has finished, because your combatant vanished.
+237	There is no limit for Potions.
+238	You can use up to %d potions.
+239	The fight will start in 10 seconds.
+240	The duel has begun.
+241	The duel is being finished because there is a problem in the duel arena.
+242	The duel has finished because of a timeout.
+243	In 10 seconds you will be teleported into the city.
+244	Your combatant has got some problems. The duel is being cancelled.
+245	%s has won the duel.
+246	%s has won.
+247	You will be teleported into the city in 10 seconds.
+248	The next round will begin in 10 seconds.
+249	The combatants have been separated. The duel has been stopped.
+250	Action cancelled. You have entered a battle.
+251	You can't sell Item-Shop items in a private shop.
+252	Equipped items cannot be sold in the private shop.
+253	You cannot sell items you are currently using in a private shop.
+254	Mining completed.
+255	You cannot mine without a Pick.
+256	You cannot fish here.
+257	Please choose a Fishing Pole.
+258	Place the Bait on the Hook first.
+259	You can't go fishing without a fishing pole!
+260	[Group] You cannot make a request because the group leader is not online.
+261	[Group] The server cannot execute this group request.
+262	[Group] You cannot form a group with players from another kingdom.
+263	[Group] You cannot invite players while you are in a dungeon.
+264	[Group] You cannot invite a player while you are in observer mode.
+265	[Group] Only players with a level difference of -30 to +30 can be invited.
+266	[Group] You cannot invite this player, as their level is too low.
+267	[Group] You cannot invite this player, as their level is too high.
+268	[Group] You cannot invite any more players into your group.
+269	A group invitation has been sent to %s.
+270	This player is not in this group.
+271	[Group] You cannot join this group because it is already full.
+272	[Group] You do not have the right to invite someone.
+273	[Party] %s declined the invitation.
+274	[Group] %s is already in the group.
+275	[Group] You cannot accept the invitation.
+276	[Group] %s has declined your group invitation.
+277	[Group] %s has joined your Group.
+278	You joined the party of %s.
+279	You cannot open a private shop while you are trading with others.
+280	This player is already trading with another player.
+281	[Storeroom] You have entered an incorrect password.
+282	[Storeroom] The Storeroom is already open.
+283	[Storeroom] You have to wait 10 seconds before you can open the Storeroom again.
+284	[Storeroom] You are too far away to open the storeroom.
+285	This function is not available right now.
+286	The opponent is offline.
+287	After opening the Storeroom, you cannot go anywhere else for %d seconds.
+288	You cannot do that while another window is open.
+289	After trading you cannot go elsewhere for %d seconds.
+290	You cannot use a Return Scroll for %d seconds after upgrading an item.
+291	You cannot open a shop while carrying more than 2 billion Yang.
+292	Your shop name cannot contain offensive language or slang.
+293	[Group] You cannot accept an invitation into a dungeon.
+294	The monsters will attack in 5 minutes!
+295	The monsters will attack in 1 minute!
+296	The monsters have begun attacking the castle.
+297	An evil energy is gathering at the central altar.
+298	The monsters appear to be retreating.
+299	The monsters have begun to retreat.
+300	The player will be teleported into the city shortly.
+301	The leader of the monsters has appeared.
+302	Defeat the Demon King within 30 minutes.
+303	We've slain the boss!
+304	The Demon King has retreated.
+305	%s: The monsters are marching towards the castle.
+306	The monsters will attack the castle in 10 minutes.
+414	You can do this when you wear an Emotion Mask.
+425	Only women can do this.
+436	This person does not exist.
+441	You cannot open the Storeroom if another window is already open.
+448	You are too near.
+459	You are too far away.
+470	This action can only be done with another gender.
+472	[Guild] This guild name is invalid.
+473	[Guild] This guild name is already taken.
+474	[Guild] You cannot found a guild.
+476	[Guild] %s has refused the Guild war.
+481	You need your fellow player's approval for this.
+482	[Guild] The guild war has been cancelled.
+487	A mysterious light appears from the tree.
+489	You can participate in the guild battle in viewer mode.
+490	While choosing a character, an icon appears.
+492	The battle with %s has begun!
+499	Transformation error.
+500	You learned the transmutation completely.
+514	You have challenged %s to a battle.
+547	You do not have the emperor qualification.
+550	Only the emperor can use this.
+556	Warp to player %s.
+558	[Guild] There are no experience points for hunting during a guild war.
+560	My information about the emperor
+563	Information about the emperor
+570	The Emperor Blessing is activated.
+652	Your chat is blocked.
+654	You need a minimum level of %d to be able to call.
+655	You are not in this Group.
+656	You did not join this Guild.
+657	The player has rejected your request to add him to your friend list.
+659	[Friends] You cannot add a GM to your list.
+660	%s is not online.
+661	After a trade, you have to wait %d seconds before you can open a shop.
+662	You can trade again in %d seconds.
+663	You have more than 2 Billion Yang with you. You cannot trade.
+664	You cannot open a private shop while another window is open.
+665	You cannot trade as this would exceed the maximum amount of 2 billion Yang.
+666	[Storeroom] No movement possible.
+667	[Storeroom] The item cannot be stored.
+671	[Group] Only the group leader can change this.
+672	[Group] The target is not a member of your group.
+673	[Group] You cannot kick out a player while you are in a dungeon.
+675	[Group] You have been out kicked of the group.
+676	[Group] You cannot leave a group while you are in a dungeon.
+677	[Group] You cannot kick out group members.
+678	[Guild] After disbanding a guild, you cannot create a new one for %d days.
+679	[Guild] After leaving a guild, you cannot create a new one for %d days.
+680	This guild name is invalid.
+682	[Guild] [%s] guild has been created.
+683	[Guild] Creation of the guild has failed.
+684	[Group] Only the group leader can use group skills.
+685	[Group] The target has not been found.
+686	[Guild] That is not the correct amount of Yang.
+688	[Guild] The person you were searching for cannot be found.
+689	[Guild] This person is not in the same guild.
+690	[Guild] You do not have the authority to kick out guild members.
+693	[Guild] You have kicked a guild member out.
+694	[Guild] You do not have the authority to change your rank name.
+696	[Guild] This rank name is invalid.
+697	[Guild] You do not have the authority to change your position.
+698	[Guild] The rights of the guild leader cannot be changed.
+699	[Guild] %u experience points used.
+700	[Guild] Experience usage has failed.
+701	[Guild] Insufficient Yang in the guild treasury.
+702	[Guild] Dragon ghost was not restored.
+704	[Guild] You do not have the authority to make an announcement.
+705	[Guild] You do not have the authority to change the position.
+706	[Guild] The guild leader's position cannot be changed.
+707	[Guild] You cannot make yourself guild leader.
+708	[Guild] You do not have the authority to choose the guild leader.
+709	[Guild] You cannot choose any more guild leaders.
+727	Your mining points have reached their maximum. (%d)
+728	Your mining points have reached their maximum level.
+729	You can get lumberjack Deokbae to upgrade your Pickaxe.
+732	Nothing to mine here.
+733	The mining has been successful.
+734	The mining has failed.
+735	[Friends] You have added %s as a friend.
+737	[Friends] You have deleted %s from the list.
+741	(%s) guild has been created. [Temporary]
+742	This guild is at war.
+743	%s: This guild does not exist.
+744	A guild with this name or number does not exist.
+745	The building does not exist.
+746	This type of building can only be erected once.
+748	The Main Building has to be erected first.
+749	Building failed because of incorrect pricing.
+750	Your guild does not have enough Yang to erect this building.
+751	You do not have enough resources to build a building.
+752	You cannot erect a building at this place.
+753	This character does not exist.
+754	Duel has not been successfully cancelled.
+755	Duel cancelled successfully.
+756	The duel has been successfully started.
+757	There is a problem with initiating the duel.
+759	There are no combatants.
+760	No status points left.
+761	Remaining status points are too low.
+762	You entered an incorrect value.
+763	Suborder or the Order is incorrect.
+767	Information for the Kingdoms
+771	Information about the status of the kingdom battle
+774	[Storeroom] Storeroom password has been changed.
+775	[Storeroom] You have entered the wrong password.
+798	Go to the Fisherman and get your Fishing Pole upgraded!
+807	The fish vanished in the depths of the water.
+808	There is a Clam inside the Fish.
+809	There is a Worm inside the Fish.
+810	You are roasting %s over the fire.
+811	You cannot trade because you are carrying more than 2 billion Yang.
+851	You cannot go elsewhere for a period of time after the trade.
+871	The quota of the Item Drop is at the moment plus %d%%
+872	The quota of the Yang Drop is at the moment plus %d%%
+873	The drop rate for Yang rain is currently %d%% higher.
+874	The experience bonus is currently an additional %d%%.
+876	You cannot trade in the shop while another window is open.
+877	You are too far away from the shop to buy something.
+881	This sale will be taxed %d%%.
+882	You cannot ride a Horse while you are transformed.
+884	You do not have a Horse.
+885	Your Horse is dead.
+886	Your Horse's endurance is too low.
+887	Calling the Horse has failed.
+891	The war is already over.
+893	You cannot trade while observing.
+895	The other person is currently busy so you cannot trade right now.
+896	The other person has cancelled the trade.
+898	The other person does not have enough Yang or does not have any space left in their inventory.
+899	The other person has no space left in their inventory.
+900	The trade with %s has been successful.
+901	You did not lose any Experience because of the Blessing of the Dragon God.
+911	Additional Stabbing Weapon Damage %d
+916	Please enter the Order in full length.
+918	You cannot do that while you are lying on the ground.
+919	In my Dreams? What?
+920	Get up first.
+921	This command does not exist.
+929	[Guild] Provided Experience is larger then left Experience.
+930	[Guild] This message cannot be deleted.
+932	[Guild] You cannot use the guild skills yet.
+935	[Guild] This player is not online.
+937	[Guild] This guild skill can only be used during war.
+938	[Guild] %u Dragon ghost points have been restored.
+939	[Guild] Only the guild leader can withdraw Yang.
+940	[Guild] The player has declined the guild invitation.
+941	[Guild] You do not have the authority to invite someone to join the guild.
+942	[Guild] You cannot invite players from another kingdom into the guild.
+943	[Guild] This player can be invited again after %d day(s).
+944	[Guild] After the rearrangement you can invite members again after %d days.
+945	[Guild] This person is already a member of another Guild.
+946	[Guild] The maximum guild capacity has been reached.
+948	You cannot train this skill.
+949	You cannot train this skill up to Grand Master level.
+950	You already are a Master of this skill. You cannot train this skill any further.
+951	Your Skill is not high enough to become a Grand Master.
+952	That did not work. Damn!
+953	Training has failed. Please try again later.
+954	My body is full of energy!
+955	The training seems to be working already...
+956	You have successfully finished your training with the Book.
+957	You cannot read this due to your lack of experience.
+959	You cannot train this skill with a Book.
+960	This skill's level is not high enough to be trained with a Book.
+961	I'm making progress, but I still haven't understood everything.
+962	These instructions are difficult to understand. I have to carry on studying.
+963	I understand this chapter. But I've got to carry on working hard.
+965	Teleportation has failed.
+966	No Horse here. Ask the Stable Boy.
+967	Please use an item to call a Horse.
+970	I am burning inside, but it is calming down my body. My Chi has to stabilise.
+971	A little slow, but steady... Without stopping!
+972	Yes, that feels great. My body is full of Chi.
+973	I have read it! Now the Chi will spread through my body.
+974	The training is completed.
+975	I am on the last page of the book. The training is nearly finished!
+976	Nearly finished! Just a little bit more to go!
+977	Eureka! I have nearly finished reading it!
+978	Only a few more pages and then I'll have read everything.
+979	I feel refreshed.
+981	Now I understand it!
+982	Okay I have to stay concentrated!
+983	I keep reading the same line over and over again.
+984	I do not want to learn any more.
+985	It is a lot more complicated and more difficult to understand than I thought.
+986	It's hard for me to concentrate. I should take a break.
+988	Your chat block has been lifted.
+989	The Build window is already open.
+990	You cannot build something while another trade/storeroom window is open.
+992	The build window is not open.
+993	You do not have the right material.
+994	[Guild] Please try again later.
+995	You have to read %d more skill books to improve this skill.
+997	You are only able to use this function while you are at the castle.
+1011	There is no user with this name.
+1014	You cannot upgrade anything while another window is open.
+1043	You cannot express emotions whilst riding a horse.
+1044	You cannot use emotions with a player who is riding on a Horse.
+1049	You cannot get on the horse while you are lying on the ground.
+1052	[Guild] Your guild has already reached the maximum level.
+1058	[Guild] The person standing opposite you cannot receive the invitation.
+1059	You cannot sell equipped items.
+1061	[Storeroom] You cannot move this item into your storeroom.
+1068	Dragon Stone has been removed.
+1074	Removal of Dragon Stone failed. But you have received the following: %s
+1075	Removal of Dragon Stone failed.
+1076	This item is not required for improving the clarity level.
+1078	Improvement of the clarity level successful.
+1079	Refinement up one class failed.
+1080	This item is not required for refinement.
+1081	This Dragon Stone cannot be used for refinement.
+1082	Refinement up one class was successful.
+1083	Improvement of the clarity level failed.
+1084	You do not own the materials required to strengthen the Dragon Stone.
+1085	This Dragon Stone cannot be used for strengthening.
+1087	Strengthening was successful.
+1088	Strengthening failed.
+1089	The Dragon Stone is not activated.
+1118	You cannot trade while another window is open.
+1130	You don't have enough space in your inventory.
+1268	[Guild] No guild advertisements available.

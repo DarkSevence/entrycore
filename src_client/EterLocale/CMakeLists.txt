@@ -1,0 +1,24 @@
+project(EterLocale LANGUAGES CXX)
+
+file(GLOB_RECURSE ETERLOCALE_SOURCES CONFIGURE_DEPENDS
+  "*.cpp" "*.c"
+)
+file(GLOB_RECURSE ETERLOCALE_HEADERS CONFIGURE_DEPENDS
+  "*.h" "*.hpp"
+)
+
+add_library(EterLocale STATIC
+  ${ETERLOCALE_SOURCES}
+  ${ETERLOCALE_HEADERS}
+)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/$<CONFIG>")
+
+target_include_directories(EterLocale PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+set_target_properties(EterLocale PROPERTIES
+	FOLDER ""
+  ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/$<CONFIG>"
+)
