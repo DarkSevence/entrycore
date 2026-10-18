@@ -746,17 +746,21 @@ int SECTREE_MANAGER::Build(const char * c_pszListFileName, const char* c_pszMapB
 
 	char buf[256 + 1];
 	char szFilename[256];
-	char szMapName[256];
+	std::string strMapName;
 	int iIndex;
 
 	while (fgets(buf, 256, fp))
 	{
-		*strrchr(buf, '\n') = '\0';
+		buf[strcspn(buf, "\r\n")] = '\0';
 
 		if (!strncmp(buf, "//", 2) || *buf == '#')
 			continue;
 
-		sscanf(buf, " %d %s ", &iIndex, szMapName);
+		std::istringstream line(buf);
+		if (!(line >> iIndex >> strMapName))
+			continue;
+
+		const char * szMapName = strMapName.c_str();
 
 		snprintf(szFilename, sizeof(szFilename), "%s/%s/Setting.txt", c_pszMapBasePath, szMapName);
 
