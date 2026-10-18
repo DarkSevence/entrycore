@@ -120,6 +120,9 @@ void CPythonEventManager::__InitEventSet(TEventSet& rEventSet)
 
 	rEventSet.pCurrentTextLine = NULL;
 	rEventSet.ScriptTextLineList.clear();
+#ifdef MULTILANG_SYSTEM
+	rEventSet.LocalizedCommands.clear();
+#endif	
 
 	rEventSet.isConfirmWait = FALSE;
 	rEventSet.pConfirmTimeTextLine = NULL;
@@ -419,7 +422,17 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 
 	IAbstractApplication& rApp=IAbstractApplication::GetSingleton();
 
+#ifdef MULTILANG_SYSTEM
+	const bool isLocalizedText = !pEventSet->LocalizedCommands.empty();
+	if (isLocalizedText)
+	{
+		ScriptCommand = pEventSet->LocalizedCommands.front();
+		pEventSet->LocalizedCommands.pop_front();
+	}
+	else if (!pEventSet->ScriptGroup.GetCmd(ScriptCommand))
+#else
 	if (!pEventSet->ScriptGroup.GetCmd(ScriptCommand))
+#endif
 	{
 		pEventSet->isLock = true;
 		return;
@@ -440,7 +453,10 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 			pEventSet->pCurrentTextLine->SetColor(pEventSet->CurrentColor.r,pEventSet->CurrentColor.g,pEventSet->CurrentColor.b);
 			pEventSet->iCurrentLetter+=c_rstValue.length();
 
-			if (pEventSet->iCurrentLetter >= pEventSet->iRestrictedCharacterCount)
+			if (pEventSet->iCurrentLetter >= pEventSet->iRestrictedCharacterCount
+#ifdef MULTILANG_SYSTEM
+				&& !isLocalizedText
+#endif
 			{
 				__InsertLine(*pEventSet);
 			}
@@ -514,33 +530,18 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 			std::string localizedText;
 			CPythonLocaleManager::Instance().FormatQuestString(localeID, arguments, localizedText);
 
-			std::string::size_type offset = 0;
-			while (offset < localizedText.length())
+			script::Group localizedScript;
+			if (!localizedText.empty() && localizedScript.Create(localizedText))
 			{
-				if (pEventSet->iRestrictedCharacterCount <= 0)
-					pEventSet->iRestrictedCharacterCount = 30;
-
-				int available = pEventSet->iRestrictedCharacterCount - pEventSet->iCurrentLetter;
-				if (available <= 0)
+				script::TCmd command;
+				while (localizedScript.GetCmd(command))
 				{
-					__InsertLine(*pEventSet);
-					available = pEventSet->iRestrictedCharacterCount;
+					if (command.name == "LETTER" || command.name == "ENTER" || command.name == "COLOR" || command.name == "/COLOR")
+						pEventSet->LocalizedCommands.push_back(command);
 				}
-
-				const std::string::size_type remaining = localizedText.length() - offset;
-				const std::string::size_type appendLength = remaining < static_cast<std::string::size_type>(available)
-					? remaining : static_cast<std::string::size_type>(available);
-				pEventSet->strCurrentLine.append(localizedText, offset, appendLength);
-				pEventSet->iCurrentLetter += static_cast<int>(appendLength);
-				offset += appendLength;
-
-				pEventSet->pCurrentTextLine->SetValueString(pEventSet->strCurrentLine);
-				pEventSet->pCurrentTextLine->SetColor(pEventSet->CurrentColor.r, pEventSet->CurrentColor.g, pEventSet->CurrentColor.b);
-				if (pEventSet->iCurrentLetter >= pEventSet->iRestrictedCharacterCount)
-					__InsertLine(*pEventSet);
 			}
 
-			pEventSet->lLastDelayTime = pEventSet->lWaitingTime;
+			pEventSet->lLastDelayTime = 0;
 			break;
 		}
 #endif

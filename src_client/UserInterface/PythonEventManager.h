@@ -123,6 +123,9 @@ class CPythonEventManager : public CSingleton<CPythonEventManager>
 
 			// Group Data
 			script::Group ScriptGroup;
+#ifdef MULTILANG_SYSTEM
+			std::list<script::TCmd> LocalizedCommands;
+#endif			
 
 			// Static Data
 			char szFileName[32+1];
