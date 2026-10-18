@@ -1972,27 +1972,27 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 				}
 			}
 
-			// Ä¥ ¶§¸¶´Ù HPÈ¸º¹
-			if (pAttacker->GetPoint(POINT_HIT_HP_RECOVERY) && number(0, 4) > 0) // 80% È®·ü
+			if (pAttacker->GetPoint(POINT_HIT_HP_RECOVERY) && number(0, 4) > 0) // 80%
 			{
-				int i = MIN(dam, iCurHP) * pAttacker->GetPoint(POINT_HIT_HP_RECOVERY) / 100;
+				const int recoveryBase = (iCurHP >= 0) ? std::min(dam, iCurHP) : dam;
+				const int recoveredHP = recoveryBase * pAttacker->GetPoint(POINT_HIT_HP_RECOVERY) / 100;
 
-				if (i)
+				if (recoveredHP > 0)
 				{
 					CreateFly(FLY_HP_SMALL, pAttacker);
-					pAttacker->PointChange(POINT_HP, i);
+					pAttacker->PointChange(POINT_HP, recoveredHP);
 				}
 			}
 
-			// Ä¥ ¶§¸¶´Ù SPÈ¸º¹
-			if (pAttacker->GetPoint(POINT_HIT_SP_RECOVERY) && number(0, 4) > 0) // 80% È®·ü
+			if (pAttacker->GetPoint(POINT_HIT_SP_RECOVERY) && number(0, 4) > 0) // 80%
 			{
-				int i = MIN(dam, iCurHP) * pAttacker->GetPoint(POINT_HIT_SP_RECOVERY) / 100;
+				const int recoveryBase = (iCurHP >= 0) ? std::min(dam, iCurHP) : dam;
+				const int recoveredSP = recoveryBase * pAttacker->GetPoint(POINT_HIT_SP_RECOVERY) / 100;
 
-				if (i)
+				if (recoveredSP > 0)
 				{
 					CreateFly(FLY_SP_SMALL, pAttacker);
-					pAttacker->PointChange(POINT_SP, i);
+					pAttacker->PointChange(POINT_SP, recoveredSP);
 				}
 			}
 
