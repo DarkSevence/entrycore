@@ -1035,7 +1035,16 @@ void CPythonEventManager::MakeQuestion(TEventSet * pEventSet, script::TArgList &
 	for (script::TArgList::iterator itor=rArgumentList.begin(); itor!=rArgumentList.end(); ++itor)
 	{
 		script::TArg & rArgument = *itor;
-		PyCallClassMemberFunc(pEventSet->poEventHandler, "AppendQuestion", Py_BuildValue("(si)", rArgument.strValue.c_str(), iIndex));
+		const char* answer = rArgument.strValue.c_str();
+#ifdef MULTILANG_SYSTEM
+		if (strncmp(answer, "@LQ:", 4) == 0)
+		{
+			const char* localizedAnswer = CPythonLocaleManager::Instance().GetQuestString(strtoul(answer + 4, NULL, 10));
+			if (localizedAnswer)
+				answer = localizedAnswer;
+		}
+#endif
+		PyCallClassMemberFunc(pEventSet->poEventHandler, "AppendQuestion", Py_BuildValue("(si)", answer, iIndex));
 		++iIndex;
 	}
 }
