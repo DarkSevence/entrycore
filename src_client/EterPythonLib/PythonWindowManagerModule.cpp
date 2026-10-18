@@ -1551,8 +1551,13 @@ PyObject * wndBarSetColor(PyObject * poSelf, PyObject * poArgs)
 	UI::CWindow * pWindow;
 	if (!PyTuple_GetWindow(poArgs, 0, &pWindow))
 		return Py_BuildException();
-	int iColor;
-	if (!PyTuple_GetInteger(poArgs, 1, &iColor))
+	
+	PyObject* color;
+	if (!PyTuple_GetObject(poArgs, 1, &color))
+		return Py_BuildException();
+	
+	DWORD iColor = static_cast<DWORD>(PyLong_AsUnsignedLongMask(color));
+	if (PyErr_Occurred())
 		return Py_BuildException();
 
 	if (pWindow->IsType(UI::CBar3D::Type()))
