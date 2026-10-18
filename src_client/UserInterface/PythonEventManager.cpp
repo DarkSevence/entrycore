@@ -717,6 +717,15 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 			int idx = atoi(GetArgument("idx", ScriptCommand.argList));
 			const char * name = GetArgument("name", ScriptCommand.argList);
 			
+#ifdef MULTILANG_SYSTEM
+			if (strncmp(name, "@LQ:", 4) == 0)
+			{
+				const char* localeName = CPythonLocaleManager::Instance().GetQuestString(strtoul(name + 4, NULL, 10));
+				if (localeName)
+					name = localeName;
+			}
+#endif
+			
 			// 퀘스트 UI 리뉴얼이 되면 해결 되므로 일단 용혼석만 땜빵 by chrislee
 			if (!strcmp(name, "조각난 용혼석?....")) {
 				PyCallClassMemberFunc(m_poInterface, "BINARY_RecvQuest", Py_BuildValue("(isss)", idx, name, "highlight", ""));

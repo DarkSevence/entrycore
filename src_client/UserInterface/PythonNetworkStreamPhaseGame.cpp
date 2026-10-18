@@ -2142,6 +2142,14 @@ bool CPythonNetworkStream::RecvQuestInfoPacket()
 				return false;
 			szTitle[30] = '\0';
 			strTitle = szTitle;
+#ifdef MULTILANG_SYSTEM
+			if (strncmp(szTitle, "@LQ:", 4) == 0)
+			{
+				const char* localeTitle = CPythonLocaleManager::Instance().GetQuestString(strtoul(szTitle + 4, NULL, 10));
+				if (localeTitle)
+					strTitle = localeTitle;
+			}
+#endif
 		}
 	}
 	if (0 != (c_rFlag & QUEST_SEND_CLOCK_NAME))
