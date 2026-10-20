@@ -209,7 +209,7 @@ void CInputAuth::Login(LPDESC d, const char * c_pData)
 	else
 	{
 		DBManager::instance().ReturnQuery(QID_AUTH_LOGIN, dwKey, p, 
-				"SELECT CONCAT('*',UPPER(LEFT(SHA2('%s',256),40))),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
+				"SELECT CONCAT('*',UPPER(SHA2('%s',256))),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
 				"UNIX_TIMESTAMP(silver_expire),"
 				"UNIX_TIMESTAMP(gold_expire),"
 				"UNIX_TIMESTAMP(safebox_expire),"
@@ -350,7 +350,7 @@ void CInputAuth::LoginOpenID(LPDESC d, const char * c_pData)
 	else
 	{
 		DBManager::instance().ReturnQuery(QID_AUTH_LOGIN_OPENID, dwKey, p, 
-				"SELECT CONCAT('*',UPPER(LEFT(SHA2('%s',256),40))),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
+				"SELECT CONCAT('*',UPPER(SHA2('%s',256))),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
 				"UNIX_TIMESTAMP(silver_expire),"
 				"UNIX_TIMESTAMP(gold_expire),"
 				"UNIX_TIMESTAMP(safebox_expire),"

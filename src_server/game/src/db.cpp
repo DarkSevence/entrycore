@@ -720,9 +720,9 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					MYSQL_ROW row = mysql_fetch_row(pMsg->Get()->pSQLResult);
 					int col = 0;
 
-					// PASSWORD('%s'), password, securitycode, social_id, id, status
-					char szEncrytPassword[45 + 1];
-					char szPassword[45 + 1];
+					// SHA-256 hash, password, securitycode, social_id, id, status
+					char szEncrytPassword[ACCOUNT_PASSWORD_HASH_MAX_LEN  + 1];
+					char szPassword[ACCOUNT_PASSWORD_HASH_MAX_LEN + 1];
 					char szMatrixCode[MATRIX_CODE_MAX_LEN + 1];
 					char szSocialID[SOCIAL_ID_MAX_LEN + 1];
 					char szStatus[ACCOUNT_STATUS_MAX_LEN + 1];
@@ -1453,7 +1453,7 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					sys_log(0, "[AUTH_BRAZIL] : Succeed to create a new account %s", pinfo->login) ;
 
 					ReturnQuery(QID_AUTH_LOGIN, qi->dwIdent, pinfo,
-							"SELECT CONCAT('*',UPPER(LEFT(SHA2('%s',256),40))),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
+							"SELECT CONCAT('*',UPPER(SHA2('%s',256))),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
 							"UNIX_TIMESTAMP(silver_expire),"
 							"UNIX_TIMESTAMP(gold_expire),"
 							"UNIX_TIMESTAMP(safebox_expire),"
